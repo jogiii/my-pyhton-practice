@@ -1,6 +1,7 @@
-#File no t found exception
+# File no t found exception
 
 try:
     file = open("test.txt")
 except:
-    print("this file is not found")
+    print("file created")
+    file = open("test.txt", "w")

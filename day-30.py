@@ -9,5 +9,5 @@ try:
 except FileNotFoundError:
     print("file created")
     file = open("test.txt", "w")
-except KeyError:
-    print("this key is not present in dictionary")
+except KeyError as error_message:
+    print(f"this key {error_message} is not present in dictionary {a_dictionary}")
